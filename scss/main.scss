@@ -1,0 +1,88 @@
+@import "./imports/_normalize.scss";
+
+*{ box-sizing: border-box }
+img {
+   width: 100%;
+   display: block;
+}
+
+#app-container{
+   background: #69A77C;
+
+   .jumbotron{
+      text-align: center;
+   }
+   .small-but-mighty{
+      background: url('../assets/solrod-team-background.jpg')center center no-repeat;
+      background-size: cover;
+      height: 100%;
+
+   }
+
+   .sbm-front{
+      position: relative;
+      left:10%;
+      top:10%;
+      height:80%;
+      width:80%;
+   }
+   .nav{
+      padding-left: 6%;
+
+   }
+   .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+      background-color: black;
+   }
+   .last-picture{
+      background: url('../assets/solrod-drawingboard-background.jpg') center center no-repeat;
+      height:100%;
+      width: 100%;
+      padding-top: 300px;
+
+   }
+   .last-picture > *{
+      margin: 0 auto;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: 4%;
+      width: 50%;
+      color: #FFF;
+      padding: 50px;
+      background: grey;
+   }
+   .small-box{
+      padding-bottom: 20px;
+   }
+   .small-box > *{
+      margin: 0 auto;
+      text-align: center;
+      border: 2px solid #FFF;
+      color: #FFF;
+      width:38%;
+      padding: 8px;
+   }
+   .text-below-faces{
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 50px;
+   }
+   .icons-end-of-doc{
+      font-size: 0;
+      background: #FFF;
+   }
+   .icons-end-of-doc > *{
+      font-size: medium;
+      display: inline-block;
+      margin: 0 auto;
+      height: 10%;
+      width: 10%;
+   }
+   @media screen and (min-width: 1024px){
+      .nav{
+         display: none;
+      }
+      .sbm-front{
+         display: none;
+      }
+   }
+}
