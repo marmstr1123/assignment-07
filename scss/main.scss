@@ -1,12 +1,14 @@
 @import "./imports/_normalize.scss";
 
 *{ box-sizing: border-box }
+
 img {
    width: 100%;
    display: block;
 }
 
 #app-container{
+
    background: #69A77C;
 
    .jumbotron{
@@ -69,20 +71,37 @@ img {
    .icons-end-of-doc{
       font-size: 0;
       background: #FFF;
+      text-align: right;
+
    }
    .icons-end-of-doc > *{
       font-size: medium;
+      padding: 5px;
       display: inline-block;
       margin: 0 auto;
-      height: 10%;
-      width: 10%;
+      height: 7%;
+      width: 7%;
    }
-   @media screen and (min-width: 1024px){
-      .nav{
+   // .navbar-stuff{
+   //    display: none;
+   // }
+
+   @media screen and (min-width: 768px){
+      .navbar-stuff{
          display: none;
       }
-      .sbm-front{
+      // .sbm-front{
+      //    display: none;
+      // }
+   }
+   @media screen and (max-width: 425px){
+      .deskTopNav{
          display: none;
       }
+
+      .icons-end-of-doc{
+         text-align: left;
+      }
    }
+
 }

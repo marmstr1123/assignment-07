@@ -418,17 +418,22 @@ img {
     padding-bottom: 50px; }
   #app-container .icons-end-of-doc {
     font-size: 0;
-    background: #FFF; }
+    background: #FFF;
+    text-align: right; }
   #app-container .icons-end-of-doc > * {
     font-size: medium;
+    padding: 5px;
     display: inline-block;
     margin: 0 auto;
-    height: 10%;
-    width: 10%; }
-  @media screen and (min-width: 1024px) {
-    #app-container .nav {
-      display: none; }
-    #app-container .sbm-front {
+    height: 7%;
+    width: 7%; }
+  @media screen and (min-width: 768px) {
+    #app-container .navbar-stuff {
       display: none; } }
+  @media screen and (max-width: 425px) {
+    #app-container .deskTopNav {
+      display: none; }
+    #app-container .icons-end-of-doc {
+      text-align: left; } }
 
 /*# sourceMappingURL=styles.css.map */
